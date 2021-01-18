@@ -34,8 +34,6 @@ geno <- hlaBED2Geno(bed.fn=paste(plinkbase, ".bed", sep=""),
                     fam.fn=paste(plinkbase, ".fam", sep=""),
                     bim.fn=paste(plinkbase, ".bim", sep=""))
 
-
-
 print(Sys.time())
 
 hlaid = args$gene
