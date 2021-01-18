@@ -23,7 +23,7 @@ hlaindex <- get(load(args$indexfile))
 print(hlaindex)
 
 model <- hlaModelFromObj(hlaindex)
-hla <- hlaPredict(model, geno)
+hla <- hlaPredict(model, geno, allele.check=FALSE, same.strand=TRUE)
 
 write.table(hla$value, file = args$out, append = FALSE, quote = FALSE, sep = "\t",
             eol = "\n", na = "", dec = ".", row.names = TRUE,
